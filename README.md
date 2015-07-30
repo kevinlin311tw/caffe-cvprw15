@@ -18,7 +18,6 @@ If you find our works useful in your research, please consider citing:
     K. Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen
     CVPR Workshop (CVPRW) on Deep Learning in Computer Vision, DeepVision 2015, June 2015.
 
-. 
 
     Rapid Clothing Retrieval via Deep Learning of Binary Codes and Hierarchical Search
     K. Lin, H.-F. Yang, K.-H. Liu, J.-H. Hsiao, C.-S. Chen
