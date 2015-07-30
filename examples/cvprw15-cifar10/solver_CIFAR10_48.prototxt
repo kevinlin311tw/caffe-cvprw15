@@ -1,0 +1,14 @@
+train_net: "train_CIFAR10_48.prototxt"
+test_net: "test_CIFAR10_48.prototxt"
+test_iter: 100
+test_interval: 100
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 25000
+display: 20
+max_iter: 50000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 2000
+snapshot_prefix: "KevinNet_CIFAR10_48"

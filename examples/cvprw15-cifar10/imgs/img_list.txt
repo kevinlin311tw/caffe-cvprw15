@@ -1,0 +1,12 @@
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/horse2.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/horse1.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/car2.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/bird2.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/bus1.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/car1.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/air1.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/bird1.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/air2.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/bus2.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/deer1.jpg
+/home/titan/deep/caffe-cvprw15/examples/cvprw15-cifar10/imgs/deer2.jpg
