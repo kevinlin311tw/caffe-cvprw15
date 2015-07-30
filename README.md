@@ -1,4 +1,4 @@
-# caffe-cvprw15: Implementation of the deep hashing
+# caffe-cvprw15: Implementation of the Deep Hashing Methods
 
 Created by Kevin Lin, Huei-Fang Yang, and Chu-Song Chen at Academia Sinica, Taipei, Taiwan.
 
@@ -21,8 +21,9 @@ If you find our works useful in your research, please consider citing:
 
  
 ### Prerequisites
-  MATLAB (tested with 2012b on 64-bit Linux)
-  Caffe's [prerequisites](http://caffe.berkeleyvision.org/installation.html#prequequisites)
+
+  0. MATLAB (tested with 2012b on 64-bit Linux)
+  0. Caffe's [prerequisites](http://caffe.berkeleyvision.org/installation.html#prequequisites)
 
 
 ### Install caffe-cvprw15
@@ -38,7 +39,8 @@ Adjust Makefile.config and simply run the following commands:
 
 ### Demo
 
-This demo generate 48-bits binary codes using our model trained on CIFAR10. Launch matlab and run "demo.m"
+This demo generate 48-bits binary codes using our model trained on CIFAR10. 
+Launch matlab and run "demo.m"
     
     >> demo
 
