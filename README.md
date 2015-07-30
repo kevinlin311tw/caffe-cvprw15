@@ -1,4 +1,4 @@
-# caffe-cvprw15: *Implementation of the deep hashing*
+# caffe-cvprw15: Implementation of the deep hashing
 
 Created by Kevin Lin, Huei-Fang Yang, and Chu-Song Chen at Academia Sinica, Taipei, Taiwan.
 
@@ -15,20 +15,17 @@ If you find our works useful in your research, please consider citing:
     K. Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen
     CVPR Workshop (CVPRW) on Deep Learning in Computer Vision, DeepVision 2015, June 2015.
 
-
     Rapid Clothing Retrieval via Deep Learning of Binary Codes and Hierarchical Search
     K. Lin, H.-F. Yang, K.-H. Liu, J.-H. Hsiao, C.-S. Chen
     ACM International Conference on Multimedia Retrieval, ICMR 2015, June 2015.
 
  
-### Installing caffe-cvprw15
-
-**Prerequisites** 
-
+### Prerequisites
   MATLAB (tested with 2012b on 64-bit Linux)
   Caffe's [prerequisites](http://caffe.berkeleyvision.org/installation.html#prequequisites)
 
-**Install caffe-cvprw15**
+
+### Install caffe-cvprw15
 
 Adjust Makefile.config and simply run the following commands:
 
@@ -39,13 +36,11 @@ Adjust Makefile.config and simply run the following commands:
     $ ./download_model.sh
 
 
-**Run demo**
+### Demo
 
-Launch matlab and run "demo.m"
+This demo generate 48-bits binary codes using our model trained on CIFAR10. Launch matlab and run "demo.m"
     
     >> demo
-
-This demo generate 48-bits binary codes using our model trained on CIFAR10.
 
 
 ### Contact
