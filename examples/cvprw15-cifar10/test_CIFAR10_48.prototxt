@@ -3,8 +3,8 @@ layers {
   layer {
     name: "data"
     type: "data"
-    source: "../../cifar10_val_leveldb"
-    meanfile: "/home/iis/deep/rcnn_packages/caffe-new/data/ilsvrc12/imagenet_mean.binaryproto"
+    source: "cifar10_val_leveldb"
+    meanfile: "../../data/ilsvrc12/imagenet_mean.binaryproto"
     batchsize: 32
     cropsize: 227
     mirror: true

@@ -10,5 +10,5 @@ display: 20
 max_iter: 50000
 momentum: 0.9
 weight_decay: 0.0005
-snapshot: 2000
+snapshot: 10000
 snapshot_prefix: "KevinNet_CIFAR10_48"

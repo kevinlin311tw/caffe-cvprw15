@@ -49,6 +49,29 @@ Launch matlab and run "demo.m"
     >> demo
 
 
+
+### Train Your Own Model on CIFAR10 dataset.
+
+First, run script "prepare.sh" to download ImageNet pretrained model and CIFAR10 dataset. This script converts CIFAR10 to leveldb format.
+
+    $ ./prepare.sh    
+
+
+Then, go to the our folder "/examples/cvprw15-cifar10", and run the training script:
+
+    $ cd /examples/cvprw15-cifar10
+    $ chmod 777 train_48.sh
+    $ ./train_48.sh
+
+You will get your CIFAR10 model under the same folder "KevinNet_CIFAR10_48_iter_xxxxx.caffemodel"
+
+
+
+### Train Your Own Model on another dataset.
+
+It should be easy to train the Deep-Binary-Codes model using another dataset as long as that dataset has label annotations. You need to convert the dataset into leveldb format using "create_imagenet.sh"  To be continued..
+
+ 
 ### Contact
 
 Please feel free to leave suggestions or comments to Kevin Lin (kevinlin311.tw@iis.sinica.edu.tw), Huei-Fang Yang (hfyang@citi.sinica.edu.tw) or Chu-Song Chen (song@iis.sinica.edu.tw)
