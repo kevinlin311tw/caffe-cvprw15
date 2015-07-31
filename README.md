@@ -70,7 +70,7 @@ Then, go to the folder "/examples/cvprw15-cifar10", and run the training script:
     $ ./train_48.sh
 
 
-The Training process takes roughly 5~6 hours on a desktop with Geforce GTX Titian Black GPU.
+The training process takes roughly 5~6 hours on a desktop with GTX Titian Black GPU.
 You will finally get your model named "KevinNet_CIFAR10_48_iter_xxxxxx.caffemodel"
 
 To use your model, modify your model path in "/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m":
