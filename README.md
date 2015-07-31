@@ -54,7 +54,7 @@ Launch matlab and run "demo.m"
 
 
 
-### Train Your Own Model on CIFAR10 dataset.
+### Train your own model on CIFAR10 dataset.
 
 First, run script "prepare.sh" to download ImageNet pretrained model and CIFAR10 dataset. This script will convert CIFAR10 to leveldb format.
 
@@ -74,7 +74,7 @@ You will get the model under the same folder "KevinNet_CIFAR10_48_iter_xxxxx.caf
 
 
 
-### Train Your Own Model on another dataset.
+### Train your own model on another dataset.
 
 It should be easy to train the model using another dataset as long as that dataset has label annotations. You need to convert the dataset into leveldb format using "create_imagenet.sh"  We will show you how to do this. To be continued..
 
