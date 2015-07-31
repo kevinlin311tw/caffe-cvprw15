@@ -56,7 +56,7 @@ Launch matlab and run "demo.m"
 
 ### Train your own model on CIFAR10 dataset.
 
-First, run script "prepare.sh" to download ImageNet pretrained model and CIFAR10 dataset. This script will convert CIFAR10 to leveldb format.
+First, run script "prepare.sh" to download ImageNet pretrained model and CIFAR10 dataset. This script will convert CIFAR10 to leveldb format. The whole process takes around 5 minutes.
 
 
     $ ./prepare.sh
@@ -70,15 +70,16 @@ Then, go to the folder "/examples/cvprw15-cifar10", and run the training script:
     $ ./train_48.sh
 
 
-You will get your model named "KevinNet_CIFAR10_48_iter_xxxxxx.caffemodel"
+The Training process takes roughly 5~6 hours on a desktop with Geforce GTX Titian Black GPU.
+You will finally get your model named "KevinNet_CIFAR10_48_iter_xxxxxx.caffemodel"
 
-To use your trained model, modify your model path in "/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m":
+To use your model, modify your model path in "/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m":
 
 ```
-line#14  model_file = './examples/cvprw15-cifar10/YOUR_MODEL.caffemodel';
+line#14  model_file = './YOUR/MODEL/PATH.caffemodel';
 ```
 
-Launch matlab, run "demo.m" and enjoy it!
+Launch matlab, run "demo.m" and enjoy!
     
     >> demo
 
