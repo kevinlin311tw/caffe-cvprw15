@@ -76,7 +76,6 @@ To use your trained model, modify your model path in "/matlab/caffe/matcaffe_ini
 
 ```
 line#14  model_file = './examples/cvprw15-cifar10/YOUR_MODEL.caffemodel';
-
 ```
 
 Launch matlab, run "demo.m" and enjoy it!
