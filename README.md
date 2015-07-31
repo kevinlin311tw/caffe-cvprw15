@@ -70,7 +70,19 @@ Then, go to the folder "/examples/cvprw15-cifar10", and run the training script:
     $ ./train_48.sh
 
 
-You will get the model under the same folder "KevinNet_CIFAR10_48_iter_xxxxx.caffemodel"
+You will get your model named "KevinNet_CIFAR10_48_iter_xxxxxx.caffemodel"
+
+To use your trained model, modify your model path in "/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m":
+
+```
+line#14  model_file = './examples/cvprw15-cifar10/YOUR_MODEL.caffemodel';
+
+```
+
+Launch matlab, run "demo.m" and enjoy it!
+    
+    >> demo
+
 
 
 
