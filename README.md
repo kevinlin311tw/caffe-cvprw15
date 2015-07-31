@@ -76,7 +76,7 @@ You will finally get your model named "KevinNet_CIFAR10_48_iter_xxxxxx.caffemode
 To use your model, modify your model path in "/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m":
 
 ```
-line#14  model_file = './YOUR/MODEL/PATH.caffemodel';
+line#14  model_file = './YOUR/MODEL/PATH.caffemodel;
 ```
 
 Launch matlab, run "demo.m" and enjoy!
@@ -88,7 +88,7 @@ Launch matlab, run "demo.m" and enjoy!
 
 ### Train your own model on another dataset.
 
-It should be easy to train the model using another dataset as long as that dataset has label annotations. You need to convert the dataset into leveldb format using "create_imagenet.sh"  We will show you how to do this. To be continued..
+It should be easy to train the model using another dataset as long as that dataset has label annotations. You need to convert the dataset into leveldb format using "create_imagenet.sh".  We will show you how to do this. To be continued.
 
  
 
