@@ -54,7 +54,7 @@ Launch matlab and run "demo.m"
 
 
 
-### Train your own model on CIFAR10 dataset.
+### Train your own model on CIFAR10 dataset
 
 First, run script "prepare.sh" to download ImageNet pretrained model and CIFAR10 dataset. This script will convert CIFAR10 to leveldb format. The whole process takes around 5 minutes.
 
@@ -86,20 +86,20 @@ Launch matlab, run "demo.m" and enjoy!
 
 
 
-### Train your own model on another dataset.
+### Train your own model on another dataset
 
 It should be easy to train the model using another dataset as long as that dataset has label annotations. You need to convert the dataset into leveldb format using "create_imagenet.sh".  We will show you how to do this. To be continued.
 
  
-### Speed Up
+### Correction of computational cost
 
-In our previous experiments, we use mex-file to call C/C++ functions from MATLAB, which slows down the process. In our latest experiments, we improve the search with pure C/C++ implementation as shown below.
+In previous experiments, we use mex-file to call C/C++ functions from MATLAB, which slows down the process. We improve the search with pure C/C++ implementation as shown below.
 
 
-  Descriptor   |       Measure       | Computational cost
--------------- |:-------------------:|:-------------------:
-CNN-fc7-4096   | Euclidean distance  |       22.6 μs
-BinaryCode-64  | Hamming distance    |       23.0 ps
+     Descriptor     |       Measure       | Computational cost
+------------------- |:-------------------:|:-------------------:
+CNN-fc7-4096        | Euclidean distance  |       22.6 μs
+BinaryHashCodes-64  | Hamming distance    |       23.0 ps
 
 
 Performing the Euclidean distance measure between two 4096-dimensional vectors takes 22.6 μs.
