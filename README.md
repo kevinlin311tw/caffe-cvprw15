@@ -91,7 +91,20 @@ Launch matlab, run "demo.m" and enjoy!
 It should be easy to train the model using another dataset as long as that dataset has label annotations. You need to convert the dataset into leveldb format using "create_imagenet.sh".  We will show you how to do this. To be continued.
 
  
+### Speed Up
 
+In our previous experiments, we use mex-file to call C/C++ functions from MATLAB, which slows down the process. In our latest experiments, we improve the search with pure C/C++ implementation as shown below.
+
+
+  Descriptor   |       Measure       | Computational cost
+-------------- |:-------------------:|:-------------------:
+CNN-fc7-4096   | Euclidean distance  |       22.6 μs
+BinaryCode-64  | Hamming distance    |       23.0 ps
+
+
+Performing the Euclidean distance measure between two 4096-dimensional vectors takes 22.6 μs.
+Computing hamming distance between two 64-bit binary codes takes 23 ps (bitwise XOR operation).
+Thus, the proposed method is around ~982,600x faster than traditional exhaustive search with 4096-dimensional features.
 
 
 ### Contact
