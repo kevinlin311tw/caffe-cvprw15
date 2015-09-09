@@ -76,7 +76,7 @@ You will finally get your model named "KevinNet_CIFAR10_48_iter_xxxxxx.caffemode
 To use your model, modify your model path in "/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m":
 
 ```
-line#14  model_file = './YOUR/MODEL/PATH.caffemodel;
+line#14  model_file = './YOUR/MODEL/PATH.caffemodel';
 ```
 
 Launch matlab, run "demo.m" and enjoy!
