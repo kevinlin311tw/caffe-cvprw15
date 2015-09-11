@@ -76,7 +76,8 @@ Moreover, simply run the following commands to generate the `precision at k` cur
 
 You will reproduce the precision curves with respect to different number of top retrieved samples when the 48-bit hash codes are
 used in the evaluation:
-<img src="https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png" width="300">
+
+<img src="https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png" width="800">
  
 ## Train your own model on CIFAR10 dataset
 
