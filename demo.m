@@ -1,36 +1,39 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Demo of binary codes and deep feature extraction
-% Modify the images in "img_list.txt" and get the features of your images!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
+% Demo of binary codes and deep feature extraction  
+% Modify 'test_file_list' and get the features of your images!
+
 close all;
 clear;
-addpath('matlab/caffe');
-addpath('examples');
 
-USE_GPU = 1; % 1 to use the GPU, 0 to use the CPU
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Demo of 48-bits binary codes extraction using our deep hashing method.
+% -----------------------------------------------------------
+% 48-bits binary codes extraction
 %
 % input
 %   	img_list.txt:  list of images files 
-%
 % output
 %   	binary_codes: 48 x num_images output binary vector
 %   	list_im: the corresponding image path
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% ----- settings start here -----
+% set 1 to use gpu, and 0 to use cpu
+use_gpu = 1;
+% binary code length
+feat_len = 48;
+% models
+model_file = './examples/cvprw15-cifar10/KevinNet_CIFAR10_48.caffemodel';
+% model definition
+model_def_file = './examples/cvprw15-cifar10/KevinNet_CIFAR10_48_deploy.prototxt';
+% input data
+test_file_list = 'img_list.txt';
+% ------ settings end here ------
 
-[scores, list_im] = matcaffe_batch_KevinNet_CIFAR10_48('img_list.txt', USE_GPU);
-binary_codes = (scores>0.5);
+[feat_test , list_im] = matcaffe_batch_feat(test_file_list, use_gpu, feat_len, model_def_file, model_file);
+binary_codes = (feat_test>0.5);
 save('binary48.mat','binary_codes','list_im','-v7.3');
 
 
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Demo of layer7 feature extraction using our deep hashing method.
+% -----------------------------------------------------------
+% layer7 feature extraction
 %
 % input
 %   	img_list.txt:  list of images files 
@@ -38,7 +41,19 @@ save('binary48.mat','binary_codes','list_im','-v7.3');
 % output
 %   	scores: 4096 x num_images output vector
 %   	list_im: the corresponding image path
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% ----- settings start here -----
+% set 1 to use gpu, and 0 to use cpu
+use_gpu = 1;
+% binary code length
+feat_len = 4096;
+% models
+model_file = './examples/cvprw15-cifar10/KevinNet_CIFAR10_48.caffemodel';
+% model definition
+model_def_file = './models/bvlc_reference_caffenet/deploy_l7.prototxt';
+% input data
+test_file_list = 'img_list.txt';
+% ------ settings end here ------
 
-[scores, list_im] = matcaffe_batch_KevinNet_CIFAR10_4096('img_list.txt', USE_GPU);
-save('feat4096.mat','scores','list_im','-v7.3');
+[feat_test , list_im] = matcaffe_batch_feat(test_file_list, use_gpu, feat_len, model_def_file, model_file);
+save('feat4096.mat','feat_test','list_im','-v7.3');
