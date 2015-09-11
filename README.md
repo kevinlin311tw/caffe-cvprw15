@@ -53,7 +53,7 @@ Launch matlab and run `demo.m`
     
     >> demo
 
-## Evaluation
+## Reproducing the experiments
 
 First, run script `prepare_eval.sh` to download and setup CIFAR10 dataset. 
 
@@ -75,10 +75,8 @@ Moreover, simply run the following commands to generate the `precision at k` cur
     $ gnuplot plot-p-at-k.gnuplot 
 
 You will reproduce the precision curves with respect to different number of top retrieved samples when the 48-bit hash codes are
-used in the evaluation.:
-![precision at k](https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png)
-
-
+used in the evaluation:
+<img src="https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png" width="300">
  
 ## Train your own model on CIFAR10 dataset
 
