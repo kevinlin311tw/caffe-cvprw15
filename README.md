@@ -53,7 +53,7 @@ Launch matlab and run `demo.m`
     
     >> demo
 
-## Reproducing the experiments
+## Retrieval evaluation on CIFAR10
 
 First, run script `prepare_eval.sh` to download and setup CIFAR10 dataset. 
 
@@ -77,9 +77,9 @@ Moreover, simply run the following commands to generate the `precision at k` cur
 You will reproduce the precision curves with respect to different number of top retrieved samples when the 48-bit hash codes are
 used in the evaluation:
 
-<img src="https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png" width="600">
+<img src="https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png" width="500">
  
-## Train your own model on CIFAR10 dataset
+## Train your own model on CIFAR10
 
 First, run script `prepare_train.sh` to download ImageNet pretrained model and convert CIFAR10 dataset to leveldb format. The whole process takes around 5 minutes.
 
