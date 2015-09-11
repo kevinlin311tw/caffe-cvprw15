@@ -60,7 +60,7 @@ First, run script `prepare_eval.sh` to download and setup CIFAR10 dataset.
     $ ./prepare_eval.sh
 
 
-Second, launch matalb and run `run_cifar10.m` to perform the evaluation of `precision at k` and `mean average precision at k`. We set `k=1000` in the experiments. This process takes around 12 minutes.
+Second, launch matalb and run `run_cifar10.m` to perform the evaluation of `precision at k` and `mean average precision at k`. We set `k=1000` in the experiments. The bit length of binary codes is `48`. This process takes around 12 minutes.
     
     >> run_cifar10
 
@@ -74,8 +74,10 @@ Moreover, simply run the following commands to generate the `precision at k` cur
     $ cd analysis
     $ gnuplot plot-p-at-k.gnuplot 
 
-You will finally get the `precision at k` curves in pdf format:
-![](https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png)
+You will reproduce the precision curves with respect to different number of top retrieved samples when the 48-bit hash codes are
+used in the evaluation.:
+![precision at k](https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png)
+
 
  
 ## Train your own model on CIFAR10 dataset
@@ -97,7 +99,7 @@ Then, go to the folder `/examples/cvprw15-cifar10`, and run the training script:
 The training process takes roughly 5~6 hours on a desktop with GTX Titian Black GPU.
 You will finally get your model named `KevinNet_CIFAR10_48_iter_xxxxxx.caffemodel`
 
-To use your model, modify the `model_file` to link to your model in `demo.m`:
+To use your model, modify the `model_file` in `demo.m` to link to your model:
 
 ```
     model_file = './YOUR/MODEL/PATH/filename.caffemodel';
