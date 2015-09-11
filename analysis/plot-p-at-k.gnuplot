@@ -20,7 +20,7 @@ set rmargin 17.5
 set title "Image Retrieval Precision of CIFAR-10"
 set xlabel "# of Top Images Retrieved "
 set ylabel "Precision"
-plot 'precision-at-k2.txt' using 1:2 title "Ours" lt 1 lc 1 lw 4 ,\
+plot 'precision-at-k.txt' using 1:2 title "Ours" lt 1 lc 1 lw 4 ,\
 "CNNH+-p-at-k.txt" using 1:2 title "CNNH+" lt 1 lc 2  lw 4 ,\
 "CNNH-p-at-k.txt" using 1:2 title "CNNH" lt 1 lc 3  lw 4 ,\
 "KSH-p-at-k.txt" using 1:2 title "KSH" lt 1 lc 4  lw 4 ,\

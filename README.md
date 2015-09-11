@@ -53,13 +53,37 @@ Launch matlab and run `demo.m`
     
     >> demo
 
+## Evaluation
 
+First, run script `prepare_eval.sh` to download and setup CIFAR10 dataset. 
+
+    $ ./prepare_eval.sh
+
+
+Second, launch matalb and run `run_cifar10.m` to perform the evaluation of `precision at k` and `mean average precision at k`. We set `k=1000` in the experiments. This process takes around 12 minutes.
+    
+    >> run_cifar10
+
+
+Then, you will get the `mAP` result as follows. 
+
+    >> MAP = 0.897373
+
+Moreover, simply run the following commands to generate the `precision at k` curves:
+
+    $ cd analysis
+    $ gnuplot plot-p-at-k.gnuplot 
+
+You will finally get the `precision at k` curves in pdf format:
+![](https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png)
+
+ 
 ## Train your own model on CIFAR10 dataset
 
-First, run script `prepare.sh` to download ImageNet pretrained model and CIFAR10 dataset. This script will convert CIFAR10 to leveldb format. The whole process takes around 5 minutes.
+First, run script `prepare_train.sh` to download ImageNet pretrained model and convert CIFAR10 dataset to leveldb format. The whole process takes around 5 minutes.
 
 
-    $ ./prepare.sh
+    $ ./prepare_train.sh
 
 
 Then, go to the folder `/examples/cvprw15-cifar10`, and run the training script:
@@ -73,10 +97,10 @@ Then, go to the folder `/examples/cvprw15-cifar10`, and run the training script:
 The training process takes roughly 5~6 hours on a desktop with GTX Titian Black GPU.
 You will finally get your model named `KevinNet_CIFAR10_48_iter_xxxxxx.caffemodel`
 
-To use your model, modify your model path in `/matlab/caffe/matcaffe_init_KevinNet_CIFAR10_48.m`:
+To use your model, modify the `model_file` to link to your model in `demo.m`:
 
 ```
-line#14  model_file = './YOUR/MODEL/PATH.caffemodel';
+    model_file = './YOUR/MODEL/PATH/filename.caffemodel';
 ```
 
 Launch matlab, run `demo.m` and enjoy!
