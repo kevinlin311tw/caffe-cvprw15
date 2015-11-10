@@ -1,6 +1,6 @@
 # Caffe-cvprw15 
 
-Implementation of the Deep Learning of Binary Hash Codes
+Deep Learning of Binary Hash Codes for Fast Image Retrieval
 
 Created by Kevin Lin, Huei-Fang Yang, and Chu-Song Chen at Academia Sinica, Taipei, Taiwan.
 
@@ -129,6 +129,9 @@ Performing the Euclidean distance measure between two 4096-dimensional vectors t
 Computing hamming distance between two 64-bit binary codes takes 23 ps (bitwise XOR operation).
 Thus, the proposed method is around ~982,600x faster than traditional exhaustive search with 4096-dimensional features.
 
+## Questions
+
+Please refer this [FAQ](http://www.iis.sinica.edu.tw/~kevinlin311.tw/deephash_questions.txt)
 
 ## Contact
 
