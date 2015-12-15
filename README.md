@@ -79,6 +79,16 @@ used in the evaluation:
 
 <img src="https://www.csie.ntu.edu.tw/~r01944012/cvprw15-cifar10.png" width="500">
  
+
+## Results on CIFAR10
+
+We provide the MAP of Hamming ranking w.r.t different number of bits on CIFAR-10 dataset.
+
+     Method     |   12 bits   |   16 bits   |   32 bits   |   48 bits   |   64 bits   |   128 bits    
+----------------|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:------------:
+      Ours      |    89.30    |    89.77    |    89.72    |    89.73    |    89.79    |    89.68    
+
+
 ## Train your own model on CIFAR10
 
 First, run script `prepare_train.sh` to download ImageNet pretrained model and convert CIFAR10 dataset to leveldb format. The whole process takes around 5 minutes.
@@ -128,6 +138,7 @@ BinaryHashCodes-64  | Hamming distance    |       23.0 ps
 Performing the Euclidean distance measure between two 4096-dimensional vectors takes 22.6 μs.
 Computing hamming distance between two 64-bit binary codes takes 23 ps (bitwise XOR operation).
 Thus, the proposed method is around ~982,600x faster than traditional exhaustive search with 4096-dimensional features.
+
 
 ## Questions
 
