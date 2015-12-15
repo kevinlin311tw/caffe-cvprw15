@@ -84,9 +84,20 @@ used in the evaluation:
 
 We provide the MAP of Hamming ranking w.r.t different number of bits on CIFAR-10 dataset.
 
-     Method     |   12 bits   |   16 bits   |   32 bits   |   48 bits   |   64 bits   |   128 bits    
-----------------|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:------------:
-      Ours      |    89.30    |    89.77    |    89.72    |    89.73    |    89.79    |    89.68    
+     Method     |   12 bits   |   32 bits   |   48 bits   
+----------------|:-----------:|:-----------:|:-----------:
+      Ours      |    89.30    |    89.72    |    89.73    
+      CNNH+     |    46.50    |    52.10    |    53.20    
+      CNNH      |    43.90    |    50.90    |    52.20    
+      KSH       |    30.30    |    34.60    |    35.60    
+     ITQ-CCA    |    26.40    |    28.80    |    29.50   
+      MLH       |    18.20    |    20.70    |    21.10    
+      BRE       |    15.90    |    19.30    |    19.60   
+      SH        |    13.10    |    13.30    |    13.00   
+      ITQ       |    16.20    |    17.20    |    17.50   
+      SH        |    12.10    |    12.00    |    12.00   
+
+
 
 
 ## Train your own model on CIFAR10
