@@ -26,6 +26,21 @@ If you find our works useful in your research, please consider citing:
     ACM International Conference on Multimedia Retrieval, ICMR 2015, June 2015.
 
 
+## CIFAR10 retrieval results
+
+Performance comparison of different hashing methods on CIFAR10 dataset. The table shows the mean average precision (mAP) of top 1000 returned images with respect to different number of hash bits.
+
+
+     Method     |   12 bits   |   32 bits   |   48 bits   
+----------------|:-----------:|:-----------:|:-----------:
+      Ours      |    89.30    |    89.72    |    89.73    
+      CNNH+     |    46.50    |    52.10    |    53.20    
+      CNNH      |    43.90    |    50.90    |    52.20    
+      KSH       |    30.30    |    34.60    |    35.60    
+     ITQ-CCA    |    26.40    |    28.80    |    29.50   
+      LSH       |    12.10    |    12.00    |    12.00   
+
+
 ## Prerequisites
 
   0. MATLAB (tested with 2012b on 64-bit Linux)
@@ -136,27 +151,6 @@ Thus, the proposed method is around ~982,600x faster than traditional exhaustive
 ## Frequently asked questions
 
 Please refer this [FAQs](http://www.iis.sinica.edu.tw/~kevinlin311.tw/deephash_questions.txt)
-
-
-
-## Appendix: MAP results on CIFAR10
-
-FYR: We provide the performance comparison of different hashing methods on CIFAR10 dataset. The table shows the MAP of top 1000 returned images w.r.t different number of hash bits.
-
-
-     Method     |   12 bits   |   32 bits   |   48 bits   
-----------------|:-----------:|:-----------:|:-----------:
-      Ours      |    89.30    |    89.72    |    89.73    
-      CNNH+     |    46.50    |    52.10    |    53.20    
-      CNNH      |    43.90    |    50.90    |    52.20    
-      KSH       |    30.30    |    34.60    |    35.60    
-     ITQ-CCA    |    26.40    |    28.80    |    29.50   
-      MLH       |    18.20    |    20.70    |    21.10    
-      BRE       |    15.90    |    19.30    |    19.60   
-      SH        |    13.10    |    13.30    |    13.00   
-      ITQ       |    16.20    |    17.20    |    17.50   
-      LSH       |    12.10    |    12.00    |    12.00   
-
 
 
 ## Contact
