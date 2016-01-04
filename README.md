@@ -153,6 +153,39 @@ Thus, the proposed method is around ~982,600x faster than traditional exhaustive
 Please refer this [FAQs](http://www.iis.sinica.edu.tw/~kevinlin311.tw/deephash_questions.txt)
 
 
+
+## Resources
+
+**Note**: This documentation may contain links to third party websites, which are provided for your convenience only. Third party websites may be subject to the third party’s terms, conditions, and privacy statements.
+
+0. Deep hashing models trained on CIFAR10:
+    - 12-bit caffemodel [MEGA](https://mega.nz/#!EJ83VTDK!4uoWDb1Bwujn5-9FLOcCDQqpsa4H68Z4VG3SxUDWczo), [BaiduYun](http://pan.baidu.com/s/1nuzI1xJ)
+    - 12-bit deploy prototxt[MEGA](https://mega.nz/#!wBVnjI5I!doxgo6Z1mRcfjVASxh-q7BDxpugyXnx3bsuKlATbEvo), [BaiduYun](http://pan.baidu.com/s/1pKr6PYV)
+    - 16-bit caffemodel [MEGA](https://mega.nz/#!kYECWTAA!iUQmM-HPwIXW52LgMmqYkuQzREMV7ZyeKHizeeBC-kI), [BaiduYun](http://pan.baidu.com/s/1qWRMy7q)
+    - 16-bit deploy prototxt [MEGA](https://mega.nz/#!UMs22DDa!RABbCmVxd-qkyltbqtkAPGrs62i087blS0z5E2GsS8M), [BaiduYun](http://pan.baidu.com/s/1o7j11ZO)
+    - 32-bit caffemodel [MEGA](https://mega.nz/#!1UtHwR6T!AubptdRNFdAH0L81m1gV1p9vL3AROh4_SI5IE1SrToA), [BaiduYun](http://pan.baidu.com/s/1nuih4vB)
+    - 32-bit deploy prototxt [MEGA](https://mega.nz/#!YAkD2YhQ!VFFUq8kjqXCv_aLuRSQcSomVrObIC635jVe5oUQN164), [BaiduYun](http://pan.baidu.com/s/1hrlF3la)
+    - 48-bit caffemodel [MEGA](https://mega.nz/#!wdlETSKa!zF5QKztryCbyVYs1ghzePxSFBxWK1TzNx0VtOAC-Cgg), [DropBox](https://www.dropbox.com/s/1om7xa8mz93wkzh/KevinNet_CIFAR10_48.caffemodel?dl=0), [BaiduYun](http://pan.baidu.com/s/1qXmfhFY)
+    - 48-bit deploy prototxt [MEGA](https://mega.nz/#!9cMhHSxL!RJQhdRXU45lkdhyAN0m5-7zcKsb6-gwnwOgpZCs5k_w), [BaiduYun](http://pan.baidu.com/s/1ntXslCH)
+    - 64-bit caffemodel [MEGA](https://mega.nz/#!EZtDyLhY!ol_bB7oWVwZt59R61DWIFNSPwHSel5I2kRUAsd6CCHk), [BaiduYun](http://pan.baidu.com/s/1kU1i0Eb)
+    - 64-bit deploy prototxt [MEGA](https://mega.nz/#!oYNi2TCb!aJn3_yHz4G1lfDWVCJ__WGMVQsaEGq6hphT6Gj6p9tY), [BaiduYun](http://pan.baidu.com/s/1bm7F5c)
+    - 128-bit caffemodel [MEGA](https://mega.nz/#!EV8F2ARY!8PTQGfBryr0wng0UyK_oE3CLRUSxHidt5X459QYmV1s), [BaiduYun](http://pan.baidu.com/s/1qX0Yl6s)
+    - 128-bit deploy prototxt [MEGA](https://mega.nz/#!BAlTiDyA!dcJonteSVzbOB7LDKsbJRDCnTGds0tQYodqDSPW7cgk), [BaiduYun](http://pan.baidu.com/s/1c1jLLAg)
+
+
+If the automatic "fetch_data" fails, you may manually download the resouces from:
+
+0. For `./download_model.sh`:
+    - 48-bit model: [MEGA](https://mega.nz/#!wdlETSKa!zF5QKztryCbyVYs1ghzePxSFBxWK1TzNx0VtOAC-Cgg), [DropBox](https://www.dropbox.com/s/1om7xa8mz93wkzh/KevinNet_CIFAR10_48.caffemodel?dl=0), [BaiduYun](http://pan.baidu.com/s/1qXmfhFY)
+
+0. For `./prepare_eval.sh`:
+    - CIFAR10 dataset we used (jpg format): [MEGA](https://mega.nz/#!RENV1bhZ!x0uFnAkqUSTJzKr6HzeeNV9mtDjlgQ0x6ZaXfpxbJkw), [DropBox](https://www.dropbox.com/s/f7q3bbgvat2q1u2/cifar10-dataset.zip?dl=0), [BaiduYun](http://pan.baidu.com/s/1pKsSK7h)
+
+0. For `./prepare_train.sh`:
+    - ImageNet-pretrained networks: [MEGA](https://mega.nz/#!UZ0VGIYB!y2crhbo89S9hYLv5TyHLXXB5Sus8ZkpUzTNkeUPkfU4), [DropBox](https://www.dropbox.com/s/nlggnj47xxdmwkb/bvlc_reference_caffenet.caffemodel?dl=0), [BaiduYun](http://pan.baidu.com/s/1qWRMy4G)
+
+
+
 ## Contact
 
 Please feel free to leave suggestions or comments to Kevin Lin (kevinlin311.tw@iis.sinica.edu.tw), Huei-Fang Yang (hfyang@citi.sinica.edu.tw) or Chu-Song Chen (song@iis.sinica.edu.tw)
