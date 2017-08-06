@@ -31,14 +31,14 @@ If you find our works useful in your research, please consider citing:
 Performance comparison of different hashing methods on CIFAR10 dataset. The table shows the mean average precision (mAP) of top 1000 returned images with respect to different number of hash bits.
 
 
-     Method     |   12 bits   |   32 bits   |   48 bits   
-----------------|:-----------:|:-----------:|:-----------:
-      Ours      |    89.30    |    89.72    |    89.73    
-      CNNH+     |    46.50    |    52.10    |    53.20    
-      CNNH      |    43.90    |    50.90    |    52.20    
-      KSH       |    30.30    |    34.60    |    35.60    
-     ITQ-CCA    |    26.40    |    28.80    |    29.50   
-      LSH       |    12.10    |    12.00    |    12.00   
+|     Method     |   12 bits   |   32 bits   |   48 bits   
+|----------------|:-----------:|:-----------:|:-----------:
+|      Ours      |    89.30    |    89.72    |    89.73    
+|      CNNH+     |    46.50    |    52.10    |    53.20    
+|      CNNH      |    43.90    |    50.90    |    52.20    
+|      KSH       |    30.30    |    34.60    |    35.60    
+|     ITQ-CCA    |    26.40    |    28.80    |    29.50   
+|      LSH       |    12.10    |    12.00    |    12.00   
 
 
 ## Prerequisites
@@ -136,10 +136,10 @@ It should be easy to train the model using another dataset as long as that datas
 In previous experiments, we use mex-file to call C/C++ functions from MATLAB, which slows down the process. We improve the search with pure C/C++ implementation as shown below.
 
 
-     Descriptor     |       Measure       | Computational cost
-------------------- |:-------------------:|:-------------------:
-CNN-fc7-4096        | Euclidean distance  |       22.6 μs
-BinaryHashCodes-64  | Hamming distance    |       23.0 ps
+|      Descriptor     |       Measure       | Computational cost
+| ------------------- |:-------------------:|:-------------------:
+| CNN-fc7-4096        | Euclidean distance  |       22.6 μs
+| BinaryHashCodes-64  | Hamming distance    |       23.0 ps
 
 
 Performing the Euclidean distance measure between two 4096-dimensional vectors takes 22.6 μs.
